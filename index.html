@@ -18,7 +18,7 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f6fbff;
+background:#f4f9ff;
 color:#222;
 }
 
@@ -42,13 +42,12 @@ margin-bottom:10px;
 
 header p{
 font-size:18px;
-opacity:0.9;
 }
 
 .btn{
 display:inline-block;
 margin-top:25px;
-padding:12px 25px;
+padding:12px 30px;
 background:white;
 color:#0077ff;
 border-radius:30px;
@@ -62,32 +61,37 @@ padding:80px 0;
 
 h2{
 text-align:center;
-margin-bottom:40px;
-font-size:32px;
+margin-bottom:50px;
+font-size:34px;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
 .product{
 background:white;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-padding:20px;
-text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+overflow:hidden;
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
 }
 
 .product img{
 width:100%;
-border-radius:10px;
-margin-bottom:15px;
+height:350px;
+object-fit:cover;
 }
 
-.product h3{
-margin-bottom:10px;
+.product-content{
+padding:20px;
+text-align:center;
 }
 
 .catalog{
@@ -97,30 +101,24 @@ text-align:center;
 .catalog a{
 background:#0077ff;
 color:white;
-padding:14px 30px;
+padding:15px 35px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
-}
-
-.about{
-text-align:center;
-max-width:800px;
-margin:auto;
 }
 
 .contact{
 background:#0077ff;
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 footer{
-text-align:center;
-padding:20px;
 background:#111;
 color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -139,14 +137,14 @@ color:white;
 </header>
 
 
-<section class="about container">
+<section class="container">
 
-<h2>About Us</h2>
+<h2>About HAYA</h2>
 
-<p>
-HAYA India Distribution supplies high-quality household cleaning products including detergent liquids,
-hand wash, phenol and dish wash liquids. Our products deliver powerful cleaning while remaining safe
-for daily use. We supply supermarkets and retailers across Coimbatore and Tamil Nadu.
+<p style="text-align:center;max-width:750px;margin:auto;">
+HAYA India Distribution supplies high-quality cleaning products including detergent liquid,
+hand wash, phenol and dish wash liquids. Our products deliver powerful cleaning while
+remaining safe for daily use. Trusted by retailers across Coimbatore.
 </p>
 
 </section>
@@ -159,33 +157,43 @@ for daily use. We supply supermarkets and retailers across Coimbatore and Tamil 
 <div class="products">
 
 <div class="product">
-<img src="https://via.placeholder.com/300x300">
+<img src="hiwash.jpg">
+<div class="product-content">
 <h3>HI-Wash Detergent Liquid</h3>
-<p>Powerful deep clean formula with long lasting freshness.</p>
+<p>Powerful stain removal with deep cleaning formula.</p>
+</div>
 </div>
 
 <div class="product">
-<img src="https://via.placeholder.com/300x300">
+<img src="purex.jpg">
+<div class="product-content">
 <h3>HI-Wash Purex</h3>
-<p>Strong clean with soft touch for your fabrics.</p>
+<p>Strong clean with soft touch for fabrics.</p>
+</div>
 </div>
 
 <div class="product">
-<img src="https://via.placeholder.com/300x300">
+<img src="handwash.jpg">
+<div class="product-content">
 <h3>Hywa Hand Wash</h3>
-<p>Gentle on skin with refreshing fragrance.</p>
+<p>Gentle care with refreshing fragrance.</p>
+</div>
 </div>
 
 <div class="product">
-<img src="https://via.placeholder.com/300x300">
+<img src="phenol.jpg">
+<div class="product-content">
 <h3>Hywa Phenol</h3>
-<p>Powerful disinfectant for clean and safe floors.</p>
+<p>Clean floors and safe homes disinfectant.</p>
+</div>
 </div>
 
 <div class="product">
-<img src="https://via.placeholder.com/300x300">
+<img src="dishwash.jpg">
+<div class="product-content">
 <h3>Hywa Dish Wash</h3>
-<p>Removes tough grease with one drop clean.</p>
+<p>One drop powerful grease cleaning.</p>
+</div>
 </div>
 
 </div>
@@ -195,26 +203,11 @@ for daily use. We supply supermarkets and retailers across Coimbatore and Tamil 
 
 <section class="catalog">
 
-<h2>Product Catalogue</h2>
+<h2>Download Catalogue</h2>
 
-<p style="margin-bottom:20px;">Download our full product brochure</p>
-
-<a href="HAYA INDIA DISTRIBUTION BROUCHER.pdf" download>
-Download Catalogue
+<a href="HAYA INDIA DISTRIBUTION BROUCHER.pdf">
+Download Product Catalogue
 </a>
-
-</section>
-
-
-<section class="container">
-
-<h2>Become a Distributor</h2>
-
-<p style="text-align:center;max-width:700px;margin:auto;">
-We are expanding our distribution network across Tamil Nadu.
-If you are interested in becoming a dealer or distributor for HAYA products,
-contact us today.
-</p>
 
 </section>
 
@@ -227,9 +220,9 @@ contact us today.
 
 <p>Coimbatore, Tamil Nadu</p>
 
-<p>Phone / WhatsApp : +91 XXXXX XXXXX</p>
+<p>Phone / WhatsApp : +91 8111899012</p>
 
-<p>Email : hayaindia@gmail.com</p>
+<p>Email : hayaindiacbe@gmail.com</p>
 
 </section>
 
